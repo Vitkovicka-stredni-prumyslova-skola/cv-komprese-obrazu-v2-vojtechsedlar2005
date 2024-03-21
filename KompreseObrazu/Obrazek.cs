@@ -1,23 +1,9 @@
-
 using System.IO;
 using System.Security.Cryptography.X509Certificates;
 using System.Xml;
 
 namespace Komprese
 {
-
-  public class PraceSobrazkem : Obrazek{
-    private int [ ]pocetBarev;
-
-    Obrazek inputCSV = new Obrazek(testFilePath);
-
-    public void vyhledatPIX(){
-
-    }
-  }
-    public void spocitatPIX(){
-        
-    }
   public class Obrazek{
     /// <summary>
     /// Privátní statické dvourozměrné pole, které obsahuje jednotlivé symboly obrázku reprezentující barvu pixelu
@@ -30,6 +16,7 @@ namespace Komprese
     /// <param name="filePath">Cesta k obrázku</param>
     public Obrazek(string filePath){
         readImg(filePath);
+        
     }
     /// <summary>
     /// Metoda spočítá vertikální velikost obrazu na základě počtu řádků ve vstupním CSV souboru
@@ -43,9 +30,44 @@ namespace Komprese
             int i = 0;
             while (sr.ReadLine() != null) { i++; }
             return i;
-        
         }
+    } 
+       public List<int> PaletaBarevObrazku(){
+       
+        List<int> result = new List<int>();
+
+        for (int j = 0; j < obrazek.GetLength(1); j++)
+        {
+            
+            for (int i = 0; i < obrazek.GetLength(0); i++)
+            {                
+                if(!result.Contains(obrazek[i,j])){
+                    result.Add(obrazek[i,j]);
+                }
+                
+            }
+            
+        }
+        return result;
     }
+
+        public int PocetUnikatnichBarev(int color)
+        {
+            int count = 0;
+
+            for (int j = 0; j < obrazek.GetLength(1); j++)
+            {
+                for (int i = 0; i < obrazek.GetLength(0); i++)
+                {
+                    if (obrazek[i, j] == color)
+                    {
+                        count++;
+                    }
+                }
+            }
+
+            return count;
+        }
 
     /// <summary>
     /// Metoda spočítá horizontální velikost obrazu na základě počtu symbolů v jednom řádku ve vstupním CSV souboru
@@ -67,7 +89,7 @@ namespace Komprese
         }
         
     }
-    /// <summary>
+/// <summary>
     /// Načte vstupní obrázek, který převede na statické dvourozměrné pole o horizontální velikosti vypočtené z počtu symbolů na prvním řádku a 
     /// vertikální velikosti vypočítáné z počtu řádků.
     /// </summary>

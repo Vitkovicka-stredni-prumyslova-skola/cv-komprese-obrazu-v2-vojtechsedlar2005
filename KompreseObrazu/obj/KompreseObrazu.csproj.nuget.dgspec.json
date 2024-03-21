@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\VojtěchSedlář\\github-classroom\\Vitkovicka-stredni-prumyslova-skola\\cv-komprese-obrazu-v2-vojtechsedlar2005\\KompreseObrazu\\KompreseObrazu.csproj": {}
+    "C:\\Users\\VojtěchSedlář\\github-classroom\\Vitkovicka-stredni-prumyslova-skola\\cv-komprese-obrazu-v2-vojtechsedlar2005\\KompreseObrazu\\KompreseObrazu.csproj": {}
   },
   "projects": {
-    "c:\\Users\\VojtěchSedlář\\github-classroom\\Vitkovicka-stredni-prumyslova-skola\\cv-komprese-obrazu-v2-vojtechsedlar2005\\KompreseObrazu\\KompreseObrazu.csproj": {
+    "C:\\Users\\VojtěchSedlář\\github-classroom\\Vitkovicka-stredni-prumyslova-skola\\cv-komprese-obrazu-v2-vojtechsedlar2005\\KompreseObrazu\\KompreseObrazu.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\VojtěchSedlář\\github-classroom\\Vitkovicka-stredni-prumyslova-skola\\cv-komprese-obrazu-v2-vojtechsedlar2005\\KompreseObrazu\\KompreseObrazu.csproj",
+        "projectUniqueName": "C:\\Users\\VojtěchSedlář\\github-classroom\\Vitkovicka-stredni-prumyslova-skola\\cv-komprese-obrazu-v2-vojtechsedlar2005\\KompreseObrazu\\KompreseObrazu.csproj",
         "projectName": "KompreseObrazu",
-        "projectPath": "c:\\Users\\VojtěchSedlář\\github-classroom\\Vitkovicka-stredni-prumyslova-skola\\cv-komprese-obrazu-v2-vojtechsedlar2005\\KompreseObrazu\\KompreseObrazu.csproj",
+        "projectPath": "C:\\Users\\VojtěchSedlář\\github-classroom\\Vitkovicka-stredni-prumyslova-skola\\cv-komprese-obrazu-v2-vojtechsedlar2005\\KompreseObrazu\\KompreseObrazu.csproj",
         "packagesPath": "C:\\Users\\VojtěchSedlář\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\VojtěchSedlář\\github-classroom\\Vitkovicka-stredni-prumyslova-skola\\cv-komprese-obrazu-v2-vojtechsedlar2005\\KompreseObrazu\\obj\\",
+        "outputPath": "C:\\Users\\VojtěchSedlář\\github-classroom\\Vitkovicka-stredni-prumyslova-skola\\cv-komprese-obrazu-v2-vojtechsedlar2005\\KompreseObrazu\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\VojtěchSedlář\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     }
